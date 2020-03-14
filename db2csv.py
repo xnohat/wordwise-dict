@@ -13,7 +13,7 @@ with sqlite3.connect('WordWise.kll.en.en.db') as f:
 
 display_lemma_ids = senses.keys()
 
-csv = []
+csv = ['"id","word","full_def","short_def","example_sentence","hint_level"']
 
 #https://github.com/tmilovanov/wisecreator/tree/master/senses
 with open('2.txt', 'rb') as f:
